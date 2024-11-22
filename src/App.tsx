@@ -43,7 +43,7 @@ function App() {
     <div className="min-h-screen bg-white font-sans">
       <Navbar />
       <Hero />
-      <Stats />
+      {/*<Stats />*/}
 
       {/* About Section */}
       <section id="about" className="py-32 relative bg-gray-50">
