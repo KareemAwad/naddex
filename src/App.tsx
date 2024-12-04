@@ -58,7 +58,7 @@ function App() {
                 We specialize in pre-tender review and coordination to ensure that all project drawings are accurate, complete, and aligned across all disciplines.
               </p>
               <a href="#contact" className="inline-flex items-center gap-2 bg-[#244E8A] text-white px-6 py-3 rounded-full hover:bg-[#1a3366] transition-colors">
-                Get Started <ArrowRight className="w-5 h-5" />
+                Contact Us
               </a>
             </div>
             <div className="relative">
@@ -68,7 +68,7 @@ function App() {
                 className="rounded-lg shadow-2xl"
               />
               <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-lg shadow-xl">
-                <h3 className="text-3xl font-bold text-[#244E8A] mb-2">60+</h3>
+                <h3 className="text-3xl font-bold text-[#244E8A] mb-2">35+</h3>
                 <p className="text-gray-600">Years Combined Experience</p>
               </div>
             </div>

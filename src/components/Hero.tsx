@@ -30,7 +30,7 @@ export function Hero() {
               href="#contact"
               className="inline-flex items-center justify-center gap-2 bg-[#244E8A] text-white px-8 py-4 rounded-full hover:bg-[#1a3366] transition-colors text-lg"
             >
-              Get Started <ArrowRight className="w-5 h-5" />
+              Contact Us 
             </a>
             <a
               href="#services"
