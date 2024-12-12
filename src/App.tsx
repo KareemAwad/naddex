@@ -1,9 +1,10 @@
 import React from 'react';
-import { MapPin, Phone, Mail, CheckCircle, Building2, FileCheck, Target, TrendingUp, Shield, FileSpreadsheet, ArrowRight } from 'lucide-react';
+import { CheckCircle, Building2, Target, TrendingUp, Shield, FileSpreadsheet } from 'lucide-react';
 import { ServiceCarousel } from './components/ServiceCarousel';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { Stats } from './components/Stats';
+import { Contact } from './components/Contact';
+
 
 function App() {
   const services = [
@@ -43,7 +44,6 @@ function App() {
     <div className="min-h-screen bg-white font-sans">
       <Navbar />
       <Hero />
-      {/*<Stats />*/}
 
       {/* About Section */}
       <section id="about" className="py-32 relative bg-gray-50">
@@ -152,85 +152,8 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-32 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-heading font-bold text-[#2B4B8C] mb-8 tracking-tight">Get in Touch</h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Ready to ensure your project's success? Contact us today for a consultation.
-              </p>
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#244E8A] p-3 rounded-full">
-                    <MapPin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900">Location</h3>
-                    <p className="text-gray-600">Toronto, Ontario</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#244E8A] p-3 rounded-full">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+1 416 825 5443</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-[#244E8A] p-3 rounded-full">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900">Email</h3>
-                    <a href="mailto:nadder.awad@naddex.com" className="text-gray-600 hover:text-[#244E8A]">
-                      nadder.awad@naddex.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#244E8A] focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#244E8A] focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#244E8A] focus:border-transparent"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-[#244E8A] text-white px-6 py-3 rounded-lg hover:bg-[#1a3366] transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <Contact />
+      
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-6">
